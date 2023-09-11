@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input {
+  margin: 1rem 1rem 0.5rem 1rem;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 20rem;
+  font-size: 1rem;
+}
+
+input:focus {
+  border: 2px solid rgb(96, 96, 211);
+}
+
+button {
+  margin: 0.5rem 1rem 1rem 1rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: rgb(253, 95, 67);
+  color: white;
+  font-size: 1rem;
+}
+
+table {
+  padding: 0.3rem;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  text-align: left;
+  font-size: medium;
+}
+
+tr {
+  border: 3px solid rgb(255, 181, 168);
+  margin: 0.5rem;
+  background-color: white;
+}
+
+.item-check {
+  text-align: right;
+  cursor: pointer;
+}
+
+.main-container {
+  height: 70vh;
+  width: fit-content;
+  background-color: rgb(242, 240, 255);
+  border-radius: 2rem;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.list {
+  width: 40.5%;
+  height: 98%;
+  background-color: rgb(255, 255, 255);
+  margin-left: 1rem;
+  border-radius: 1.5rem;
+  padding: 0.5rem;
+  background-color: rgb(255, 181, 168);
+  color: rgb(61, 61, 61);
+  font-weight: bold;
+  /* border: 5px solid rgb(255, 181, 168); */
+}
+
+.add-to-list {
+  width: 55%;
+  height: 30%;
+  background-color: rgb(165, 212, 240);
+  border-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.totals {
+  width: 55%;
+  height: 66%;
+  background-color: rgb(218, 218, 218);
+  margin-top: 1rem;
+  border-radius: 1.5rem;
+}
+
+.table-head-row {
+  background-color: rgb(27, 75, 233);
+  color: white;
+  border-radius: 1rem;
+}
+
+.form-group {
+  display: flex;
+  align-items: center; /* Vertically align items in the center */
+  width: 95%;
+  padding-left: 1rem;
+}
