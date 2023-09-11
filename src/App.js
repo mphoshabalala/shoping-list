@@ -109,19 +109,24 @@ function Totals({ budget, setBudget, totalPrice, currentCost }) {
         <button>Set budget💵</button>
       </form>
       <div className="form-group">
-        <label>My Budget: </label>
+        <label>Total cost: </label>
+        <input type="text" value={`R${totalPrice}`} disabled />
+      </div>
+      <div className="form-group">
+        <label>My budget: </label>
         <input
-          value={typeof budget === "number" ? `R${budget}` : budget}
+          value={typeof budget === "number" ? `R${budget}.00` : "R0.00"}
           disabled
         />
       </div>
       <div className="form-group">
-        <label>Current Cost: </label>
-        <input value={Math.abs(currentCost).toFixed(2)} />
+        <label>Current cost: </label>
+        <input value={Math.abs(currentCost).toFixed(2)} disabled />
       </div>
+
       <div className="form-group">
-        <label>Total Price: </label>
-        <input type="text" value={`R${totalPrice}`} disabled />
+        <label>Change: </label>
+        <input value={(budget - Math.abs(currentCost)).toFixed(2)} disabled />
       </div>
     </div>
   );
