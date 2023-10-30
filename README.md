@@ -1,6 +1,4 @@
-Sure, here's a README documentation based on your provided code:
 
----
 
 # Shopping List App
 
